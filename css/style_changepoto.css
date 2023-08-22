@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.box{
+    margin-top: 80px;
+    width: 100%;
+    height: 340px;
+    position: relative; /* 相對定位 */
+}
+
+.list{
+    width: 1200px;
+    height: 300px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+}
+
+.btn{
+    position: absolute; /* 絕對定位 */
+    top: 50%;
+    margin-top: -50px;
+    width: 60px;
+    height: 100px;
+    line-height: 100px; /* 行高 */
+    font-size: 30px;
+    color: white;
+    text-decoration: none; /* 文本修飾 */
+    text-align: center;
+    background: rgba(0,255,0,.5);
+    cursor: pointer; /* 游標的樣式 改為手指 */
+}
+.next{
+    right: 0;
+}
+
+li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+img{
+    width: 751px;
+    height: 300px;
+    border:none;
+    float: left;
+}
+.p1{
+    transform:translate3d(-224px,0,0) scale(0.81);
+    /* 3d位移 x,y,z 
+       x 代表橫向坐標移向量的長度
+       y 代表縱向坐標移向量的長度
+       z 代表Z軸移向量的長度 取值不可為百分比
+     */
+}
+.p2{
+    transform:translate3d(0px,0,0) scale(0.81);
+    transform-origin:0 50%;  /* 變形原點 */
+    /*  top left | left top 等價於 0 0
+        top | top center | center top 等價於 50% 0
+        right top | top right 等價於 100% 0
+        left | left center | center left 等價於 0 50%
+        center | center center 等價於 50% 50%（預設值）
+        right | right center | center right 等價於 100% 50%
+        bottom left | left bottom 等價於 0 100%
+        bottom | bottom center | center bottom 等價於 50% 100%
+        bottom right | right bottom 等價於 100% 100%
+     */
+     /* 
+        left,center right是水平方向取值，對應的百分值為left=0%;center=50%;right=100%
+        top center bottom是垂直方向的取值，其中top=0%;center=50%;bottom=100%;        如果只取一個值，表示垂直方向值不變。
+      */
+  
+    opacity: 0.8;
+    z-index: 2;
+}
+.p3{
+    transform:translate3d(224px,0,0) scale(1);
+    z-index: 3;
+    opacity: 1;
+}
+.p4{
+    transform:translate3d(449px,0,0) scale(0.81);
+    transform-origin:100% 50%;
+    opacity: 0.8;
+    z-index: 2;
+}
+.p5{
+    transform:translate3d(672px,0,0) scale(0.81);
+}
+.p6{
+    transform:translate3d(896px,0,0) scale(0.81);
+}
+.p7{
+    transform:translate3d(1120px,0,0) scale(0.81);
+}
