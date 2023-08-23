@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<title>陳明駿的作品集-ERP外掛系統</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+<!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
+	
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script type="text/javascript">
+		$(function () {
+			$("#nav li ul").hide();
+			$("#nav li").hover(function () {
+				$(">ul:not(:animated)", this).slideDown("fast");
+			},function () {
+				$(">ul", this).slideUp("fast");
+			});
+		});
+	</script>
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="logo">
+				<!--<img src="images/logo.png" />-->
+				<h1 >陳明駿的作品集-<span class="small">ERP外掛系統</span></h1>
+			</div>
+			<ul id="header-nav">
+				<li><a href="test.html">
+						<img src="images/about.png" /></a></li>
+			<!--	<li><a href="test.html">
+					<img src="images/contact.png" /></a></li>
+				<li><a href="test.html">
+					<img src="images/sitemap.png" /></a></li>-->
+			</ul>
+		</div>
+		<div id="nav">
+			<ul>
+				<li class="color-blue">
+					<a href="#">生產系統</a>
+					<ul class="subs">
+								<li><a href="PO-1.html">生產作業</a></li>
+								<li><a href="PO-2.html">生產查詢</a></li>
+					</ul>
+				</li>
+				<li class="color-red">
+					<a href="#">銷貨系統</a>
+					<ul class="subs">
+						<li><a href="SHPF-1.html">銷貨作業</a></li>
+						<li><a href="SHPF-2.html">銷貨查詢</a></li>
+					</ul>
+				</li>
+				<li class="color-yellow">
+					<a href="#">品保系統</a>
+					<ul class="subs">
+						<li><a href="PING-1.html">品保作業</a></li>
+						<li><a href="PING-2.html">品保查詢</a></li>
+					</ul>
+				</li>
+				<li class="color-green">
+					<a href="#">業務系統</a>
+					<ul class="subs">
+						<li><a href="YA-1.html">業務作業</a></li>
+						<li><a href="YA-2.html">業務查詢</a></li>
+					</ul>
+				</li>
+
+				<li class="color-green">
+					<a href="#">測試系統</a>
+					<ul class="subs">
+						<li><a href="TEST-1.html">測試作業</a></li>
+						<li><a href="TEST-2.html">測試查詢</a></li>
+					</ul>
+				</li>
+
+				<li class="color-green">
+					<a href="#">財務系統</a>
+					<ul class="subs">
+						<li><a href="MONEY-1.html">財務作業</a></li>
+						<li><a href="MONEY-2.html">財務查詢</a></li>
+					</ul>
+				</li>
+
+
+			</ul>
+		</div>
+
+		  
+		<div id="contents">
+			<div id="contents-inner">
+				<img src="images/img.jpg" />
+				<h1>CUP</h1>
+				<p>時髦漂亮的茶杯，具備洗鍊的美麗，值得作為簡單的送禮。時髦漂亮的茶杯，具備洗鍊的美麗。</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer-inner">Copyright © 2014 MdN Department All Right Reserved.</div>
+	</div>
+</body>
+</html>
